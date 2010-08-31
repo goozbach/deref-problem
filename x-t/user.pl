@@ -15,17 +15,16 @@ my $foo_obj = App::Foo->new(caller=>\$outobj);
 my $bar_obj = App::Bar->new(caller=>\$outobj);
 
 print "\n";
-#exit;
 print "Foo stuff\n";
 $foo_obj->getter();
 $foo_obj->setter();
 $foo_obj->cat();
 $foo_obj->bat();
-print "===========\n";
+print "===========\n\n";
 
 print "Bar stuff\n";
 $bar_obj->getter();
 $bar_obj->setter();
 $bar_obj->can();
 $bar_obj->ban();
-print "===========\n";
+print "===========\n\n";
