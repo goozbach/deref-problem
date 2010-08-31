@@ -92,9 +92,6 @@ sub getter {
 =cut
 sub setter {
         my $self = shift;
-        print "setter-debug\n";
-        print "$self->{caller}\n";
-        print "end debug\n";
-        #$self->{caller}->pass("this is setter\n");
+        ${$self->{caller}}->pass("this is setter $self\n");
 }
 1;
