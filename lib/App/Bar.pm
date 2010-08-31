@@ -22,7 +22,7 @@ sub can {
 =cut
 sub ban {
         my $self = shift;
-        print "this is ban\n";
+        ${$self->{caller}}->pass("this is ban $self\n");
 }
 1;
 
